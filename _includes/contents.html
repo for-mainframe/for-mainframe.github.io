@@ -1,0 +1,13 @@
+{% assign page_contents_elem = site.data.contents | where:"page_id",page.id | first %}
+{% if page_contents_elem %}
+  <div class="text-muted">
+    <strong class="d-none d-md-block h6 mb-2">Contents:</strong>
+    <nav>
+      <ul class="custom-list">
+        {% for page_contents in page_contents_elem.page_contents %}
+          <li><a href="#{{ page_contents.section }}">{{ page_contents.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+{% endif %}

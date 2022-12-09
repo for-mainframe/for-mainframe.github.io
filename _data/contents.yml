@@ -1,0 +1,26 @@
+- page_id: home
+  page_contents:
+    - name: IJMP projects documentation repo
+      section: ijmp-projects-documentation-repo
+- page_id: for-mainframe
+  page_contents:
+    - name: For Mainframe
+      section: for-mainframe
+    - name: User Guide
+      section: user-guide
+    - name: Developer guide
+      section: developer-guide
+    - name: How to contribute
+      section: how-to-contribute
+    - name: How to obtain and provide feedback
+      section: how-to-obtain-and-provide-feedback
+- page_id: r2z
+  page_contents:
+    - name: zOSMF Retrofit Library
+      section: zosmf-retrofit-library
+    - name: Installation
+      section: installation
+    - name: Guide
+      section: guide
+    - name: How to run tests
+      section: how-to-run-tests

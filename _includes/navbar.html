@@ -1,15 +1,23 @@
-<nav class="navbar navbar-expand-lg sticky-top bg-light">
+<style>
+  .bg-gray-custom {
+    background-color: var(--bs-gray-300) !important;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -0.5px 0 rgb(0 0 0 / 15%);
+  }
+</style>
+<nav class="navbar navbar-expand-lg sticky-top bg-gray-custom bg-gradient">
   <div class="container-fluid">
-    <a class="navbar-brand mb-0 h1" href="/">Home</a>
+    <a class="navbar-brand mb-0 h1" href="/">IBA Open-Source</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/about/">About</a>
-        </li>
-      </ul>
-    </div>
+    {% for navbar_elem in site.data.navbar %}
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ navbar_elem.link }}">{{ navbar_elem.name }}</a>
+          </li>
+        </ul>
+      </div>
+    {% endfor %}
   </div>
 </nav>

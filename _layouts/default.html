@@ -6,54 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+      .bg-light-gray-custom {
+        background-color: var(--bs-gray-100) !important;
+      }
+      .custom-list {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+      .custom-list a {
+        color: inherit;
+      }
+      .custom-list a:not(:hover) {
+        text-decoration: none;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-light-gray-custom">
     {% include navbar.html %}
-    <div class="container-fluid bd-gutter mt-3 my-md-4 bd-layout">
+    <div class="container-fluid bd-gutter my-md-3 bd-layout">
       <div class="container">
         <div class="row">
-          <div class="col-2 px-3">
-            <div class="position-fixed py-3">
-              Left
-              <br>
-              side
-              <br>
-              bar
-              <br>
-              here
+          <div class="col-2 px-3 py-3">
+            {% include sidebar.html %}
+          </div>
+          <div class="col-xl-8 px-4 py-3" id="main">
+            <div class="card">
+              <div class="card-body">
+                {{ content }}
+              </div>
             </div>
           </div>
-          <div class="col-xl-8 px-4" id="main">
-            <div class="py-3">
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-              {{ content }}
-            </div>
-          </div>
-          <div class="col-2 px-3">
+          <div class="col-2 px-3 py-3">
             <div class="position-fixed py-3">
-              Right
-              <br>
-              side
-              <br>
-              bar
-              <br>
-              here
+              {% include contents.html %}
             </div>
           </div>
         </div>
