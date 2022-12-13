@@ -21,6 +21,7 @@ https://mvnrepository.com/artifact/eu.ibagroup/r2z
 
 ## Guide
 In r2z you can find ...API classes. They can be used to send requests to zOSMF. Besides API classes there located data classes like Dataset. Their purpose is to wrap a response from the server or a request into it using an object model. let's look at an example.
+
 ```kotlin
 // Create stub for DataAPI interface using Retrofit. Here baseUrl is url of your zOSMF service.
 val dataAPI = Retrofit.Builder()
