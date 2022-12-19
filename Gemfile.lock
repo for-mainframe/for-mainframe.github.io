@@ -35,8 +35,10 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     erubi (1.11.0)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x86-mingw32)
     execjs (2.8.1)
+    ffi (1.15.5-x64-mingw-ucrt)
     ffi (1.15.5-x86-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
@@ -84,6 +86,8 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.16.3)
+    nokogiri (1.13.9-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.13.9-x86-mingw32)
       racc (~> 1.4)
     pathutil (0.16.2)
@@ -142,6 +146,7 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86-mingw32
 
 DEPENDENCIES

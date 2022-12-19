@@ -55,6 +55,20 @@
     border-radius: var(--bs-accordion-border-radius);
     background-color: var(--bs-gray-200);
   }
+  .accordion-body {
+    width: 190px;
+  }
+  .accordion-button {
+    width: 190px;
+  }
+  @media (max-width: 1400px) {
+    .accordion-body {
+      width: 158px;
+    }
+    .accordion-button {
+      width: 158px;
+    }
+  }
 </style>
 {% for sidebar_section in site.data.sidebar %}
   {% assign is_current_page_section = sidebar_section.section_items | where: 'id', page.id | first %}
