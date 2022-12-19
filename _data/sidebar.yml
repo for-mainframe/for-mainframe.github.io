@@ -3,10 +3,8 @@
   section_items:
   - id: for-mainframe
     name: Overview
-    url: /for-mainframe/
 - section_name: R2Z
   section_id: r2z-root
   section_items:
   - id: r2z
     name: Overview
-    url: /r2z/

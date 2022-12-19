@@ -86,7 +86,8 @@
       </h2>
       <div id="panelsStayOpen-collapse{{ sidebar_section.section_id }}" class="accordion-collapse collapse {% if sidebar_section.section_id == active_section_id %}show{% endif %}" aria-labelledby="panelsStayOpen-heading{{ sidebar_section.section_id }}">
         {% for section_item in sidebar_section.section_items %}
-          <a class="custom-accordion-item {% if section_item.id == page.id %}show{% endif %}" href="{{ section_item.url }}">
+          {% assign section_item_page = site.pages | where: 'id', section_item.id | first %}
+          <a class="custom-accordion-item {% if section_item.id == page.id %}show{% endif %}" href="{{ section_item_page.url }}">
             <div class="accordion-body {% if section_item.id == page.id %}active-section-item{% else %}inactive-section-item{% endif %}">
               {{ section_item.name }}
             </div>
