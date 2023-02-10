@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ZosDsn</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+  <div id="leftToggler"><span class="icon-toggler"></span></div>
+  <div class="library-name">
+      <a href="../../../index.html">
+          <span>Zowe Client Kotlin SDK</span>
+      </a>
+  </div>
+  <div>
+1.3.0-rc.11  </div>
+  <div class="pull-right d-flex">
+    <a href="https://for-mainframe.github.io/" style="font-weight: 500; display: flex; align-items: center;">Other Docs</a>
+    <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <div id="searchBar"></div>
+  </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="zosmf-retrofit2::eu.ibagroup.r2z.zowe.client.sdk.zosfiles/ZosDsn///PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">zosmf-retrofit2</a><span class="delimiter">/</span><a href="../index.html">eu.ibagroup.r2z.zowe.client.sdk.zosfiles</a><span class="delimiter">/</span><span class="current">ZosDsn</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Zos</span><wbr></wbr><span><span>Dsn</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ZosDsn</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>connection<span class="token operator">: </span><a href="../../eu.ibagroup.r2z.zowe.client.sdk.core/-z-o-s-connection/index.html">ZOSConnection</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>httpClient<span class="token operator">: </span><span data-unresolved-link="okhttp3/OkHttpClient///PointingToDeclaration/">OkHttpClient</span><span class="token operator"> = </span>UnsafeOkHttpClient.unsafeOkHttpClient</span></span><span class="token punctuation">)</span></div><p class="paragraph">ZosDsn class that provides CRUD operations on Datasets</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-306480116%2FConstructors%2F769193423" anchor-label="ZosDsn" id="-306480116%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-zos-dsn.html"><span>Zos</span><wbr></wbr><span><span>Dsn</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-306480116%2FConstructors%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-zos-dsn.html"><span class="token function">ZosDsn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">connection<span class="token operator">: </span><a href="../../eu.ibagroup.r2z.zowe.client.sdk.core/-z-o-s-connection/index.html">ZOSConnection</a><span class="token punctuation">, </span></span><span class="parameter ">httpClient<span class="token operator">: </span><span data-unresolved-link="okhttp3/OkHttpClient///PointingToDeclaration/">OkHttpClient</span><span class="token operator"> = </span>UnsafeOkHttpClient.unsafeOkHttpClient</span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1320735437%2FFunctions%2F769193423" anchor-label="createDsn" id="1320735437%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-dsn.html"><span>create</span><wbr></wbr><span><span>Dsn</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1320735437%2FFunctions%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-dsn.html"><span class="token function">createDsn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataSetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">params<span class="token operator">: </span><a href="../../eu.ibagroup.r2z/-create-dataset/index.html">CreateDataset</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="retrofit2/Response///PointingToDeclaration/">Response</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Creates a new dataset with specified parameters</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-11593081%2FFunctions%2F769193423" anchor-label="deleteDsn" id="-11593081%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="delete-dsn.html"><span>delete</span><wbr></wbr><span><span>Dsn</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-11593081%2FFunctions%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="delete-dsn.html"><span class="token function">deleteDsn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataSetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="retrofit2/Response///PointingToDeclaration/">Response</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Delete a dataset</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="delete-dsn.html"><span class="token function">deleteDsn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataSetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">member<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="retrofit2/Response///PointingToDeclaration/">Response</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Delete a dataset member</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1665429528%2FFunctions%2F769193423" anchor-label="getDatasetInfo" id="-1665429528%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-dataset-info.html"><span>get</span><wbr></wbr><span>Dataset</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1665429528%2FFunctions%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-dataset-info.html"><span class="token function">getDatasetInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataSetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../eu.ibagroup.r2z/-dataset/index.html">Dataset</a></div><div class="brief "><p class="paragraph">Retrieves the information about a Dataset.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-696600985%2FFunctions%2F769193423" anchor-label="writeDsn" id="-696600985%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="write-dsn.html"><span>write</span><wbr></wbr><span><span>Dsn</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-696600985%2FFunctions%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="write-dsn.html"><span class="token function">writeDsn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataSetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">content<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="retrofit2/Response///PointingToDeclaration/">Response</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Replaces the content of an existing sequential data set with new content.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="write-dsn.html"><span class="token function">writeDsn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataSetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">member<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">content<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="retrofit2/Response///PointingToDeclaration/">Response</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Replaces the content of a member of a partitioned data set (PDS or PDSE) with new content. A new dataset member will be created if the specified dataset member does not exist.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-307827954%2FProperties%2F769193423" anchor-label="connection" id="-307827954%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="connection.html"><span><span>connection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-307827954%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-307827954%2FProperties%2F769193423" anchor-label="connection" id="-307827954%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="connection.html">connection</a><span class="token operator">: </span><a href="../../eu.ibagroup.r2z.zowe.client.sdk.core/-z-o-s-connection/index.html">ZOSConnection</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1406416615%2FProperties%2F769193423" anchor-label="httpClient" id="-1406416615%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="http-client.html"><span>http</span><wbr></wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1406416615%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-1406416615%2FProperties%2F769193423" anchor-label="httpClient" id="-1406416615%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="http-client.html">httpClient</a><span class="token operator">: </span><span data-unresolved-link="okhttp3/OkHttpClient///PointingToDeclaration/">OkHttpClient</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1875875125%2FProperties%2F769193423" anchor-label="response" id="-1875875125%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="response.html"><span><span>response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1875875125%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-1875875125%2FProperties%2F769193423" anchor-label="response" id="-1875875125%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="response.html">response</a><span class="token operator">: </span><span data-unresolved-link="retrofit2/Response///PointingToDeclaration/">Response</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="footer">
+    <span class="go-to-top-icon">
+      <a href="#content" id="go-to-top-link"></a>
+    </span>
+    <span>(c) 2022 IBA Group</span>
+    <span class="pull-right">
+      <span>Generated by </span>
+      <a href="https://github.com/Kotlin/dokka">
+        <span>dokka</span>
+        <span class="padded-icon"></span>
+      </a>
+    </span>
+  </div>
+    </div>
+</div>
+</body>
+</html>
